@@ -1,0 +1,94 @@
+<div>
+	<form name="contactForm" ng-submut="sendContactForm()" novalidate="novalidate">
+		<fieldset>
+	    	<legend>Contactformulier</legend>
+	    	<div class="row">
+		    	<div class="col-md-2">
+					<label name="name" for="name">Naam*</label>	
+				</div>
+				<div class="col-md-10"
+				ng-class="{ has-error' : contactForm.name.$invalid && !contactForm.name.$pristine }">
+					<input type="text" 
+				        placeholder="Naam" 
+				        name="name" 
+				        ng-model="field.name" 
+				        ng-minlength="3" 
+				        ng-maxlength="40" required />
+				    <p ng-show="contactForm.name.$invalid && !contactForm.name.$pristine" class="help-block">Geef uw naam in.</p>   
+				</div>
+			</div>
+
+			<div class="row">
+		    	<div class="col-md-2">
+					<label name="adres" for="adres">Straat + nr</label>	
+				</div>
+				<div class="col-md-10"
+				ng-class="{ has-error' : contactForm.adres.$invalid && !contactForm.adres.$pristine }">
+					<input type="text" 
+				        placeholder="Straat 1" 
+				        name="adres" 
+				        ng-model="field.adres" 
+				        ng-minlength="2" 
+				        ng-maxlength="40"/>
+				    <p ng-show="contactForm.adres.$invalid && !contactForm.adres.$pristine" class="help-block">Geef een geldig adres in.</p>   
+				</div>
+			</div>
+
+			<div class="row">
+		    	<div class="col-md-2">
+					<label name="city" for="city">Gemeente</label>	
+				</div>
+				<div class="col-md-10"
+				ng-class="{ has-error' : contactForm.city.$invalid && !contactForm.city.$pristine }">
+					<input type="text" 
+				        placeholder="Brussel" 
+				        name="city" 
+				        ng-model="field.city" 
+				        ng-minlength="2" 
+				        ng-maxlength="40"/>
+				    <p ng-show="contactForm.city.$invalid && !contactForm.city.$pristine" class="help-block">Geef een geldige provincie in.</p>   
+				</div>
+			</div>
+
+			<div class="row">
+		    	<div class="col-md-2">
+					<label name="email" for="email">Email*</label>	
+				</div>
+				<div class="col-md-10" ng-class="{ has-error' : contactForm.email.$invalid && !contactForm.email.$pristine }">
+					<input type="email" name="email" ng-model="field.email" placeholder="Email address" required/>
+					<p ng-show="contactForm.email.$invalid && !contactForm.email.$pristine" class="help-block">Geef een correct email in.</p>
+				</div>
+			</div>
+
+			<div class="row">
+		    	<div class="col-md-2">
+					<label name="phone" for="phone">Telefoon</label>	
+				</div>
+				<div class="col-md-10"
+					ng-class="{ has-error' : contactForm.phone.$invalid && !contactForm.phone.$pristine }">
+					<input type="number" name="phone" ng-model="field.phone" placeholder="Phone number"/>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2">
+					<label name="text" for="text">Uw vraag*</label>	
+				</div>
+				<div class="col-md-10"
+				ng-class="{ has-error' : contactForm.name.$invalid && !contactForm.name.$pristine }">
+					<textarea 
+						rows="7"
+				        placeholder="Uw vraag" 
+				        name="text" 
+				        ng-model="field.text" 
+				        ng-minlength="10" 
+				        ng-maxlength="250" required />
+				    <p ng-show="contactForm.text.$invalid && !contactForm.text.$pristine" class="help-block">Vergeet uw vraag niet!</p>   
+				</div>
+			</div>
+
+			<button type="submit" class="button radius" ng-click="sendContactForm()">Verstuur</button>
+		</fieldset>
+
+	</form>
+</div>

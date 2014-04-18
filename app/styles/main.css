@@ -1,0 +1,195 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black;
+  font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+  font-size: 11px;
+}
+
+.textContent{
+  color:white;
+}
+
+img {
+  -webkit-user-drag:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+}
+
+img.logo{
+  margin-bottom: 30px;
+  border-radius: 5px 30px;
+  transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg); /* IE 9 */
+  -webkit-transform:rotate(-5deg); /* Opera, Chrome, and Safari */
+}
+
+/*override navpills colors etc...*/
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {  
+  background-color: orange;
+}
+.nav-pills > li > a{
+  color: #ffffff;
+}
+
+div.center{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+div.menu li {
+  list-style: none;
+  font-size: 15px;
+  position:relative; 
+}
+/*add image left from main links avoid it when we don't want it*/
+div.menu > ul > li.logo {
+  background-image: url('');  
+}
+div.menu > ul > li {
+  background-image: url('../images/link.png');
+  background-repeat: no-repeat;
+  /*background-position: left center;*/
+  background-position: 0px 15px;
+  padding-left: 35px;
+  padding-top: 10px; 
+}
+div.menu > ul > li.active {
+  background-image: url('../images/link-active.png');
+}
+
+
+/*style links of the menu*/
+div.menu a {
+  color: gray;
+}
+div.menu a:hover {
+  text-decoration: none;
+  color:white;
+}
+div.menu li.active > a {
+  text-decoration: none;
+  color:white;
+}
+ul.nav > li.active > a{
+  background-color: orange;
+}
+ul.nav > li.active > a:hover{
+  background-color: orange;
+}
+ul.nav > li > a:hover{
+  background-color: orange;   
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+div.footer {
+  padding-top: 19px;
+  color: #777;  
+}
+
+div.footer div.col-md-4{
+  background-image: url('../images/link.png');
+  background-repeat: no-repeat;
+  background-position: 15px 5px;
+  padding-top: 20px; 
+}
+div.footer div.col-md-8{
+  background-image: url('../images/link.png');
+  background-repeat: no-repeat;
+  background-position: 15px 5px;
+  padding-top: 20px; 
+}
+
+/* when menu and images are stacked on top, remove the header margin */
+@media (max-width: 1000px) {
+
+  .header{
+    margin-bottom: 0px;  
+  }
+}
+@media (min-width: 1000px) {
+
+  .header{
+    margin-bottom: 70px;  
+  }
+}
+
+
+ul.subMenu{ 
+  position:absolute; 
+  left:150px; 
+}
+ul.subMenu li{
+  padding-top: 5px;
+}
+.subMenu.ng-hide-add, .subMenu.ng-hide-remove {
+  -webkit-transition:all linear 0.5s;
+  -moz-transition:all linear 0.5s;
+  -o-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+  display:block!important;
+}
+     
+.subMenu.ng-hide-add.ng-hide-add-active,
+.subMenu.ng-hide-remove {
+  opacity:0;
+}
+     
+.subMenu.ng-hide-add,
+.subMenu.ng-hide-remove.ng-hide-remove-active {
+  opacity:1;
+}
+
+/*contactform stuff*/
+form{
+  font-size: 1.4em;
+}
+form legend{
+  color: orange;
+  border: 0px;
+}
+/*input.ng-invalid {
+  border: 1px solid red;
+}
+input.ng-valid {
+  border: 1px solid green;
+}*/
+input, label, button, textarea{
+  margin-top:10px;
+}
+input, textarea{
+  width: 100%;
+  background-color: #999999;
+  border: 1px solid #999999;
+  border-radius: 5px 5px 5px 5px;  
+}
+
+button{
+  background-color: orange;
+  border: 1px solid orange;
+  border-radius: 5px 5px 5px 5px;  
+}
+
+

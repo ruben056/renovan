@@ -1,0 +1,21 @@
+<div>
+	<ul rn-carousel rn-carousel-indicator>
+		<li ng-repeat="image in images" 
+			style="background-image:url({{ image }});
+					background-size:contain;
+					background-repeat: no-repeat;
+					">
+	    	<div class="layer" style="height:450px;"></div>
+	  	</li>
+	  	<!-- <li ng-repeat="image in images">
+	    	<img draggable="false" class="nonDraggableImage" src="{{ image }}" />
+	  	</li> -->
+	</ul>
+</div>
+
+<div class="textContent">
+	<h3>{{textContent.title}}</h3>
+	<p ng-repeat="paragraph in textContent.paragraphs">
+		{{paragraph}}
+	</p>
+</div>

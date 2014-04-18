@@ -1,0 +1,22 @@
+DONE
+1. statische test versie overdragen naar dynamische versie --> DONE
+2. fotos van verschillende formaten proberen --> DONE
+3. menu item projecten uitbreiden in subcategorien --> DONE
+- lijn in footer: liever geen volledig elijn gebruiken maar kort lijntje
+
+TODO
+- make service to retrieve images en text content for each page and update all pages and also implement to about and contact page
+- Submenu overlaps the imageContent when resizing for mobile
+- watermerk of iets dergelijk zie visitekaartje
+- menu horizontaal zetten ofzo voor op gsm
+
+
+NICETOHAVE
+- PERMALINKS + HISTORY --> menu en submenu correct weergeven als rechtsreeks naar een pagina gegaan wordt.
+- buildprocess met grunt ... ervoor zorgen dat da marcheert 
+
+HOSTING:
+Client ID: 1663642
+Login email: demuynck_ruben@hotmail.com
+http://cp1.biz.nf/beta/
+ftp password: zimzimma1
