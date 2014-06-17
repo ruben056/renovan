@@ -19,4 +19,4 @@ HOSTING:
 Client ID: 1663642
 Login email: demuynck_ruben@hotmail.com
 http://cp1.biz.nf/beta/
-ftp password: zimzimma1
+ftp password: *******
