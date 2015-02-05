@@ -5,7 +5,8 @@ DONE
 - lijn in footer: liever geen volledig elijn gebruiken maar kort lijntje
 
 TODO
-- make service to retrieve images en text content for each page and update all pages and also implement to about and contact page
+- make service to retrieve images en text content for each page and update all pages accordingly
+and also implement the about and contact page
 - Submenu overlaps the imageContent when resizing for mobile
 - watermerk of iets dergelijk zie visitekaartje
 - menu horizontaal zetten ofzo voor op gsm
